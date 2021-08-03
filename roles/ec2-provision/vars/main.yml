@@ -1,0 +1,6 @@
+---
+# vars file for ec2-provision
+region: eu-central-1
+instance_type: t2.micro
+ami: ami-00f22f6155d6d92c5
+project_name: jenkins
