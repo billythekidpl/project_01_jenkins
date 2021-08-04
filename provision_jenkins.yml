@@ -1,4 +1,7 @@
-- hosts: all
+- hosts: localhost
   remote_user: root
+#  extra_vars:
+#    - instance_name: jenkins_000
   roles:
-      - ec2-provision
+    - role: ec2-provision
+      instance_name: jenkins_004

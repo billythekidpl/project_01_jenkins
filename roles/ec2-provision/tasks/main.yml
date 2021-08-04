@@ -39,6 +39,7 @@
     group_id: "{{ firewall_sg.group_id }}"
     instance_type: "{{ instance_type }}"
     image: "{{ ami }}"
+    id: "{{ project_name }}"
     wait: yes
     instance_tags:
         Name: "{{ project_name }}-lw"

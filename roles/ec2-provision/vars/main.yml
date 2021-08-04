@@ -3,4 +3,4 @@
 region: eu-central-1
 instance_type: t2.micro
 ami: ami-00f22f6155d6d92c5
-project_name: jenkins
+project_name: "{{ instance_name }}"
