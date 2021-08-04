@@ -1,6 +1,7 @@
-- hosts: tag_Name_jenkins_test_lw
+- hosts: "tag_Name_{{ instance_name }}"
   #remote_user: ec2-user
   become_user: root
   become: true
   roles:
       - role: install-docker
+        instance_name: jenkins_009

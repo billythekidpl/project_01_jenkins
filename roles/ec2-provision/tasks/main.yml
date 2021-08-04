@@ -42,9 +42,11 @@
     id: "{{ project_name }}"
     wait: yes
     instance_tags:
-        Name: "{{ project_name }}-lw"
+        Name: "{{ project_name }}"
     count_tag: Name
     exact_count: 1
     vpc_subnet_id: subnet-01da812458e44c0e8
     assign_public_ip: yes
   register: ec2
+
+#- debug: msg="{{ec2.instances[0].id}}"
