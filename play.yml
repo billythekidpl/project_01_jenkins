@@ -1,0 +1,7 @@
+---
+- import_playbook: provision_EC2.yml
+  vars: 
+    instance_name: jenkins_009
+- import_playbook: install_docker.yml
+  vars: 
+    instance_name: jenkins_009

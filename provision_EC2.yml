@@ -1,7 +1,5 @@
 - hosts: localhost
   remote_user: root
-#  extra_vars:
-#    - instance_name: jenkins_000
   roles:
     - role: ec2-provision
-      instance_name: jenkins_004
+#      instance_name: "{{ name }}"
